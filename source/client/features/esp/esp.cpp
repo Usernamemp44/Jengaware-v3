@@ -86,7 +86,7 @@ void c_esp::render_players( ) {
 
 		auto esp_color = color( 0, 0, 0 );
 		if ( config->m_esp.m_player_team_color )
-			esp_color = player->is_enemy( ) ? color( 255, 150, 50 ) : color( 50, 255, 50 );
+			esp_color = player->is_enemy( ) ? color( 255, 0, 0 ) : color( 50, 255, 50 );
 
 		else
 			esp_color = player->m_team_num( ) == TF_TEAM_RED ? color( 215, 60, 60 ) : ( player->m_team_num( ) == TF_TEAM_BLU ? color( 0, 200, 255 ) : color( 0, 0, 0 ) );
